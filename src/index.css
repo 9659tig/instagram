@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 0;
+  border-bottom: 1px solid;
+  padding: 16px 0 18px;
+}
+
+.search{
+  width: 240px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+.search-img{
+  padding: 5px;
+}
+.nav-search{
+  width: 200px;
+  border: none;
+  background: transparent;
+}
+
+.menu{
+  width: 320px;
+  height: 32px;
+  display: flex;
+  justify-content: space-around;
+}
