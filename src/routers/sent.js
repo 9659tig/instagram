@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Main(props){
+function Sent(props){
     return(
         <>
-            <h2>Main</h2>
+            <h2>Sent</h2>
         </>
     )
 }
 
-export default Main;
+export default Sent;
