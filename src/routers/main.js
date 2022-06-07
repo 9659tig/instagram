@@ -13,7 +13,7 @@ function Main(){
                 setError(null);
                 setPosts(null);
                 setLoading(true);
-                const response = await axios.get('http://localhost:5000/feed');
+                const response = await axios.get('http://152.67.210.208:5000/feed');
                 setPosts(response.data);
             } catch(e){
                 setError(e);
@@ -30,8 +30,10 @@ function Main(){
     return(
         <ul>
             {posts && posts.result.map(post =>(
-                <li key={post.feedIdx}>
-                    {post.title}
+                <li key={post.feedIdx} class="feed">
+                    <div>title : {post.title}</div>
+                    <div>content : {post.content}</div>
+                    <div>author : {post.author}</div>
                 </li>
             ))}
         </ul>
